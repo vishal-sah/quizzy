@@ -27,12 +27,11 @@ class HomePage extends StatelessWidget {
         ),
         OutlinedButton(
           onPressed: () {},
+          style: OutlinedButton.styleFrom(
+            foregroundColor: Colors.white,
+          ),
           child: const Text(
             'Start Quiz',
-            style: TextStyle(
-              fontSize: 18,
-              color: Colors.white,
-            ),
           ),
         )
       ],
