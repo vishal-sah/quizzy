@@ -10,10 +10,10 @@ class HomePage extends StatelessWidget {
       children: [
         Image.asset(
           'assets/images/quiz-logo.png',
-          width: 200,
+          width: 300,
         ),
         const SizedBox(
-          height: 40,
+          height: 80,
         ),
         const Text(
           'Learn Flutter the fun way!',
