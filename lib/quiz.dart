@@ -12,7 +12,13 @@ class Quiz extends StatefulWidget {
 }
 
 class _QuizState extends State<Quiz> {
-  Widget activeScreen = const HomePage();
+  Widget? activeScreen;
+
+  @override
+  void initState() {
+    activeScreen = HomePage(switchScreen);
+    super.initState();
+  }
 
   void switchScreen() {
     setState(() {
@@ -35,8 +41,8 @@ class _QuizState extends State<Quiz> {
               end: Alignment.bottomRight,
             ),
           ),
-          child: const Center(
-            child: HomePage(),
+          child: Center(
+            child: activeScreen,
           ),
         ),
       ),
