@@ -2,7 +2,7 @@ import 'package:quizzy/models/quiz_questions.dart';
 
 const questions = [
   // Mark the first option as answer in all questions. 
-  // But we will suffle the options in the actual app UI 
+  // But we will shuffle the options in the actual app UI
   // but internally it will be the first option
   QuizQuestion(
     'What are the main building blocks of Flutter UIs?',
